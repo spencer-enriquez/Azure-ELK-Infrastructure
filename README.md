@@ -2,11 +2,10 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![](Diagrams/Network_Diagram.pdf)
+![](Images/Network Diagram.pdf)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select files of the ansible/roles/ directory may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Explain each playbook._
   - dvwa.yml: Install / start dvwa Docker container
   - elk.yml: Install / start elk Docker container
   - filebeat-playbook.yml: Install Filebeat / start Docker container
