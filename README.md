@@ -92,6 +92,7 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to http://13.82.208.63:5601/app/kibana to check that the installation worked as expected.
 
 ### Commands to Download and run Playbook
+```console
 - mkdir files
 - git clone https://github.com/spencer-enriquez/Security-Fundamentals.git
 - cp files/* /etc/anisble/
@@ -106,3 +107,4 @@ SSH into the control node and follow the steps below:
 - ansible-playbook roles/elk.yml
 - ansible-playbook roles/filebeat-playbook.yml
 - ansible-playbook roles/metricbeat-playbook.yml
+```
