@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![](Images/"Network-Diagram".png)
+![](Images/Network-Diagram.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select files of the ansible/roles/ directory may be used to install only certain pieces of it, such as Filebeat.
 
@@ -12,7 +12,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
   - metricbeat-playbook.yml: Install / start Docker container
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -91,7 +91,8 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include the IP addresses of the target machines (ie. 10.0.0.11 ansible_python_interpreter=/usr/bin/python3). You can create a group such as '[webservers]' to configure the DVWA servers and '[elk]' to configure the ELK server.
 - Run the playbook, and navigate to http://13.82.208.63:5601/app/kibana to check that the installation worked as expected.
 
-## Commands to Download and run Playbook
+### Commands to Download and run Playbook
+```console
 - mkdir files
 - git clone https://github.com/spencer-enriquez/Security-Fundamentals.git
 - cp files/* /etc/anisble/
@@ -106,3 +107,4 @@ SSH into the control node and follow the steps below:
 - ansible-playbook roles/elk.yml
 - ansible-playbook roles/filebeat-playbook.yml
 - ansible-playbook roles/metricbeat-playbook.yml
+```
